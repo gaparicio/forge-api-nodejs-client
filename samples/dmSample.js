@@ -3,8 +3,8 @@ var fs = require('fs');
 var ForgeSDK = require('./../src/index');
 
 // TODO - insert your CLIENT_ID and CLIENT_SECRET
-var CLIENT_ID = 'wmizntnpzCJxPGF9lxsIiTZGbGO2cJqw',
-	CLIENT_SECRET = 'g5IPJwvhOHcrdbFy';
+var CLIENT_ID = '44h33Z3XTZNDheGxAAHuavqus3R1T5vm',
+	CLIENT_SECRET = 'AmxL7FAT1SWElSFN';
 
 // TODO - Choose a bucket key - a unique name to assign to a bucket. It must be globally unique across all applications and
 // regions, otherwise the call will fail. Possible values: -_.a-z0-9 (between 3-128 characters in
@@ -12,10 +12,10 @@ var CLIENT_ID = 'wmizntnpzCJxPGF9lxsIiTZGbGO2cJqw',
 var BUCKET_KEY = 'forge_sample_' + CLIENT_ID.toLowerCase();
 
 // TODO - Choose a filename - a key for the uploaded object
-var FILE_NAME = 'my-file.extension';
+var FILE_NAME = 'rac_basic_sample_project.rvt';
 
 // TODO - specify the full filename and path
-var FILE_PATH = '/path/to/your/file.extension';
+var FILE_PATH = 'C:/Program Files/Autodesk/Revit 2017/Samples/rac_basic_sample_project.rvt';
 
 var bucketsApi = new ForgeSDK.BucketsApi(), // Buckets Client
 	objectsApi = new ForgeSDK.ObjectsApi(); // Objects Client
